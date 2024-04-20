@@ -6,7 +6,7 @@ import {
   setResponse,
   setNotFoundResponse,
   setErrorResponse,
-} from "../controllers/response-handler.js";
+} from "./response-handler.js";
 
 // Retrieve a comment by its associated story ID
 export const getComment = async (req, res) => {
