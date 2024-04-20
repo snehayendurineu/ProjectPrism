@@ -1,4 +1,4 @@
-import { createProject } from "../../services/project-service";
+import { createProject } from "./../../services/project-service";
 import { createSlice, PayloadAction, createAsyncThunk } from "@reduxjs/toolkit";
 
 import Project from "../../models/project";
