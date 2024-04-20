@@ -153,7 +153,7 @@ const sendEmail = async (email, subject, payload, template) => {
       debug: true,
       auth: {
         user: process.env.EMAIL_USERNAME,
-        pass: process.env.EMAIL_PASSWORD,
+        pass: "1c89d91f3c12d9d7dba97e983e9413b2-309b0ef4-9f1b4e5b",
       },
     });
 

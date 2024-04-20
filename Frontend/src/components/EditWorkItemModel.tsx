@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectCurrentUser, selectUsers } from "../store/slices/user-slice";
 import CustomSelect from "./CustomSelect";
 import { MdDeleteOutline } from "react-icons/md";
-import * as AlertDialog from "../components/AlertDialog";
+import * as AlertDialog from "./AlertDialog";
 import { TextArea } from "./TextArea";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
