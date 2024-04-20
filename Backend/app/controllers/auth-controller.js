@@ -29,7 +29,7 @@ export const authenticateUser = async (req, res) => {
 };
 
 export const logoutUser = async (req, res) => {
-  res.clearCookie("work-wise", cookieConfig);
+  res.clearCookie("prism", cookieConfig);
   setResponse("Logged out successfully", res);
 };
 
@@ -56,8 +56,8 @@ export const changePassword = async (req, res) => {
 };
 
 export const authMiddleware = (req, res, next) => {
-  console.log("####################", req.cookies["work-wise"]);
-  const cookie = req.cookies["work-wise"];
+  console.log("####################", req.cookies["prism"]);
+  const cookie = req.cookies["prism"];
   let token;
   if (!cookie) {
     setUnauthorizedResponse(res);
@@ -72,7 +72,7 @@ export const authMiddleware = (req, res, next) => {
     next();
   } catch (error) {
     console.log("error****************", error);
-    res.clearCookie("work-wise", cookieConfig);
+    res.clearCookie("prism", cookieConfig);
     setUnauthorizedResponse(res);
   }
 };
