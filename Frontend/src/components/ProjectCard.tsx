@@ -1,7 +1,7 @@
 import Project from "../models/project";
 import { Link, Form, useNavigate } from "react-router-dom";
 import default_project_img from "../assets/default_project.svg";
-import * as AlertDialog from "./AlertDialog";
+import * as AlertDialog from "../components/AlertDialog";
 import { MdDeleteOutline } from "react-icons/md";
 import { useState, useEffect } from "react";
 import * as projectService from "../services/project-service";

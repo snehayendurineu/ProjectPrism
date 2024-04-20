@@ -3,7 +3,7 @@ import {
   setResponse,
   setNotFoundResponse,
   setErrorResponse,
-} from "./response-handler.js";
+} from "../controllers/response-handler.js";
 
 // *Controller is a class that will handle all the requests to the API*
 
